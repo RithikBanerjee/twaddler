@@ -1,5 +1,4 @@
-﻿var connectionId;
-$(function () {
+$(window).load(function () {
     $("#Register").show();
     $("#TwaddleWorld").hide();
 
@@ -73,7 +72,7 @@ $.fn.AddTwaddle = function (twaddle) {
     $(this).append(`<div class="message"><span class="userName">'${twaddle.Twaddler}</span>: '${twaddle.TwaddleContent}'</div>`);
     $(this).scrollTop(this.scrollHeight);
 }
-
+var connectionId;
 $.fn.AddTwaddler = function (hub, twaddler) {
     if (connectionId == twaddler.ConnectionId)
         $(this).append(`<div class="loginUser">${twaddler.Name}</div>`);
