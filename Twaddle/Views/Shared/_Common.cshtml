@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="~/assets/images/favicon.png" type="image/png" sizes="16x16">
+
+    @Styles.Render("~/assets/commoncss")
+    @Scripts.Render("~/assets/commonjs")
+</head>
+
+<body>
+    <div id="header">Twaddle</div>
+
+    <div id="Zone" style="padding-top: 80px;">
+        @RenderBody()
+    </div>
+
+    <div id="footer">2020 Twaddler Inc: open source user contribution licensed under github.</div>
+</body>
+</html>

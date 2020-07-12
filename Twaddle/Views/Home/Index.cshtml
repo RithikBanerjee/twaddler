@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Twaddler";
+    Layout = "~/Views/Shared/_Common.cshtml";
+}
+
+<script src="/signalr/hubs"></script>
+
+<div id="Register" class="login">
+    <div>
+        Welcome to Twaddle!<br />
+        <br />Twaddle globally or privately.<br />
+        Keep Twaddling!<br />
+        <br />Twaddler Name:
+        <br /><input id="TwaddlerName" type="text" class="textBox" />
+    </div>
+    <div id="divButton">
+        <br /><input id="LogIn" type="button" class="submitButton" value="Log In" />
+    </div>
+</div>
+
+<div id="TwaddleWorld" class="chatRoom">
+    <div class="title">Global [Twaddler: <span id='Twaddler'></span>]</div>
+    <div class="content">
+        <div id="Twaddles" class="chatWindow">
+        </div>
+        <div id="Twaddlers" class="users">
+        </div>
+    </div>
+    <div class="messageBar">
+        <input id="Twaddle" type="text" class="textbox" placeholder="Twaddle here..." />
+        <input id="Broadcast" type="button" class="submitButton" value="Twaddle" />
+    </div>
+</div>
+
+

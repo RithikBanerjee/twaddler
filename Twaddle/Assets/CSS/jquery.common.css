@@ -1,0 +1,197 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+#header {
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    font-size: 16px;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+.submitButton {
+    color: white;
+    padding: 4px;
+    border: black;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: indianred;
+}
+
+    .submitButton:hover {
+        background-color: darkslategrey;
+    }
+
+.login {
+    color: white;
+    width: 250px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 25px;
+    background-color: darkseagreen;
+}
+
+    .login .textBox {
+        width: 240px;
+        border-radius: 25px;
+        border-color: darkseagreen;
+    }
+
+
+    .login #divButton {
+        padding: 4px;
+    }
+
+.chatRoom {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: solid 1px black;
+    background-color: darkseagreen;
+}
+
+    .chatRoom .title {
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: solid 1px black;
+    }
+
+    .chatRoom .content {
+        clear: both;
+        height: 300px;
+        background-color: aliceblue;
+    }
+
+        .chatRoom .content .chatWindow {
+            float: left;
+            width: 409px;
+            height: 300px;
+            overflow-y: scroll;
+            border-right: solid 1px #5f9482;
+        }
+
+            .chatRoom .content .chatWindow .message {
+                padding: 4px;
+            }
+
+                .chatRoom .content .chatWindow .message .userName {
+                    font-weight: bold;
+                }
+
+        .chatRoom .content .users {
+            float: right;
+            width: 240px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+            .chatRoom .content .users .user {
+                display: block;
+                cursor: pointer;
+                padding: 4px;
+                background-color: #f9f9f9;
+                border-bottom: solid 1px #5f9482;
+            }
+
+            .chatRoom .content .users .loginUser {
+                display: block;
+                padding: 4px;
+                color: gray;
+                border-bottom: solid 1px #5f9482;
+            }
+
+            .chatRoom .content .users .user:hover {
+                background-color: #e1e1e1;
+            }
+
+    .chatRoom .messageBar {
+        border-top: solid 1px gray;
+        padding: 4px;
+    }
+
+        .chatRoom .messageBar .textbox {
+            width: 568px;
+            border-radius: 25px;
+        }
+
+.disconnect {
+    position: absolute;
+    margin: 10px;
+    background-color: #ffcbcb;
+    padding: 4px;
+    border: solid 1px red;
+}
+
+
+.draggable {
+    width: 250px;
+    position: absolute;
+    border-radius: 25px;
+    border: black solid 1px !important;
+}
+
+    .draggable .header {
+        cursor: move;
+        text-align: center;
+        background-color: darkseagreen;
+        border-bottom: black solid 1px;
+        border-radius: 100px 100px 0px 0px;
+    }
+        .draggable .header #close {
+            color: white;
+            cursor: pointer;
+        }
+
+    .draggable .selText {
+        color: white;
+        padding: 4px;
+    }
+
+    .draggable .messageArea {
+        width: 250px;
+        height: 200px;
+        overflow-y: scroll;
+        border-bottom: black solid 1px;
+    }
+
+        .draggable .messageArea .message {
+            padding: 4px;
+        }
+
+    .draggable .buttonBar {
+        width: 242px;
+        padding: 4px;
+        background-color: darkseagreen;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+        .draggable .buttonBar .msgText {
+            border-radius: 25px;
+            width: 168px;
+        }
+
+        .draggable .buttonBar .button {
+           margin-left:4px;
+            width: 58px;
+        }
