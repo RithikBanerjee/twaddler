@@ -1,6 +1,6 @@
 ![Poster](/Twaddle/Assets/Images/readme.png)
 
-# Twaddler - A chatting application using SignalR 
+# Twaddler - Application based on using SignalR 
 &emsp;&emsp; Twaddler is real time web application based on SignalR  which allows the user to share messages to all users as well as to individual users privately. Its a basic application to demonstrate the power of a real time application. <br /> 
 
 #### How to run the project?
