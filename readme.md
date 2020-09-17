@@ -6,6 +6,6 @@
 #### How to run the project?
 Open [Twaddler](Twaddle.sln) in your visual studio and Press 'F5'.
 
-#### What's the minimum framework needed?
+#### What's the minimum requirement to setup the project?
 .Net Framework 4.6.1 & SignalR 1.0.0.
 
