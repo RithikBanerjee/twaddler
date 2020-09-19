@@ -9,10 +9,11 @@ namespace Twaddle.Hubs
 {
     public class MasterHub : Hub
     {
+        //contact history
         private static List<Twaddler> Twaddlers = new List<Twaddler>();
-
+        //chat history
         private static List<TwaddleDetails> Twaddles = new List<TwaddleDetails>();
-
+        //add contact
         public void OnConnected(string TwaddlerName)
         {
             if (!Twaddlers.Any(x => Equals(x.ConnectionId, Context.ConnectionId)))
@@ -30,7 +31,7 @@ namespace Twaddle.Hubs
                 Clients.AllExcept(Context.ConnectionId).TwaddlerLogIn(twaddler);
             }
         }
-
+        //remove contact
         public override Task OnDisconnected()
         {
             var twaddler = Twaddlers.Find(x => Equals(x.ConnectionId, Context.ConnectionId));
@@ -43,14 +44,14 @@ namespace Twaddle.Hubs
             }
             return base.OnDisconnected();
         }
-
+        //invite new contact
         public void BroadcastTwaddle(TwaddleDetails twaddle)
         {
             Twaddles.Add(twaddle);
             //broadcast the new twaddle to all twaddlers
             Clients.All.BroadcastTwaddle(twaddle);
         }
-
+        //personal chat
         public void PrivateTwaddle(string reciverId, string message)
         {
             var reciver = Twaddlers.Find(x => Equals(x.ConnectionId, reciverId));
