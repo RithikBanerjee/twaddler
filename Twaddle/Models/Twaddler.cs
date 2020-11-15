@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 namespace Twaddle.Models
 {
-    //profile class
+    //object containing messenger details
     public class Twaddler
     {
         public string ConnectionId { get; set; }
