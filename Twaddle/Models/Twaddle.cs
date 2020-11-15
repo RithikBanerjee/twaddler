@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 namespace Twaddle.Models
 {
-    //message class
+    //object containing message
     public class TwaddleDetails
     {
         public string Twaddler { get; set; }
