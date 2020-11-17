@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Twaddle.Models;
 using System.Threading.Tasks;
@@ -39,7 +39,7 @@ namespace Twaddle.Hubs
             {
                 Twaddlers.Remove(twaddler);
 
-                //broadcast the twaddler has loggedout to all twaddlers
+                //broadcast the twaddler has logged out to all twaddlers
                 Clients.All.BoradcastTwaddlerLogOut(twaddler);
             }
             return base.OnDisconnected();
